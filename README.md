@@ -10,6 +10,7 @@
 
 <details>
 <summary>What is a Powershell-Profile?</summary>
+<br>
 
 >
 > Microsoft provide a PowerShell-Script in your user directory that will always execute if you start a new PowerShell-Terminal.
@@ -24,6 +25,7 @@
 
 <details>
 <summary>Installation</summary>
+<br>
 
 > Copy the content from the [script](#automatic-project-creation)
 > Open a PowerShell-Terminal and type "explorer C:\Users\serac\OneDrive\Dokumente\PowerShell\Microsoft.PowerShell_profile.ps1" (Notice to write "Dokumente" in your systemlanguage)
@@ -38,6 +40,7 @@
 
 <details>
 <summary>Use command</summary>
+<br>
 
 > Open a Powershell-Terminal and type the command above
 > The "codelanguage" and "projectname" represent your inputs
