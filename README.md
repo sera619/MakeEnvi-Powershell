@@ -4,6 +4,17 @@
 >
 > This Powershellscript will create new code projects.
 
+<details>
+<summary>Supported languages</summary>
+<br>
+
+>| Language | Supported |
+>|:----------:|:-----------:|
+>| Python| ✔️ |
+>| JavaScript| ✔️ |
+
+</details>
+
 ## Usage ##
 
 > If you already dont know what a Powershell-Profile is open below otherwise skip.
@@ -14,7 +25,9 @@
 
 >
 > Microsoft provide a PowerShell-Script in your user directory that will always execute if you start a new PowerShell-Terminal.
+>
 > You can use this to create own shortcuts for example if you dont want type the same path again and again.
+>
 > Or you want provide some custom scripts that you can easy access via console.
 >
 
@@ -28,10 +41,15 @@
 <br>
 
 > Copy the content from the [script](#automatic-project-creation)
+>
 > Open a PowerShell-Terminal and type "explorer C:\Users\serac\OneDrive\Dokumente\PowerShell\Microsoft.PowerShell_profile.ps1" (Notice to write "Dokumente" in your systemlanguage)
+>
 > A Editor Window will appear with your profile opened.
+> 
 > Paste the copied script code somewhere in the script.
+>
 > Save file and close the restart the terminal.
+> 
 > Make sure you edite the \<codedirectory\> variable in the script to you root code directory!
 
 </details>
@@ -44,6 +62,7 @@
 <br>
 
 > Open a Powershell-Terminal and type the command above
+>
 > The "codelanguage" and "projectname" represent your inputs
 >
 ```Powershell
