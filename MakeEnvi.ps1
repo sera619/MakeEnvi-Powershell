@@ -9,6 +9,7 @@ function MakeEnvi {
         #
         if ($codedir -eq "<codedirectory>"){
             Write-Host -fore DarkRed "[x] ERROR: Please change the codedir variable in the script!"
+            Write-Host -fore DarkRed "[x] Exit !"
             return
         }
         $lang = (Get-Culture).TextInfo.ToTitleCase( $lang.ToLower())
@@ -45,6 +46,7 @@ function MakeEnvi {
                 Set-Location $path
             }else{
                 Write-Host -fore DarkRed [x] Error: Pfad $path existiert bereits!
+                Write-Host -fore DarkRed "[x] Exit !"
                 return
             }
         } 
@@ -58,13 +60,13 @@ function MakeEnvi {
             CBF
             Write-Host -fore Yellow ""
             Write-Host -fore Green [!] Neues Project erstellt!
-        Write-Host -fore Yellow ""
-        code .
+            code .
         } else {
             Write-Host -fore Yellow ""
             Write-Host -fore Green [!] Neues Project erstellt!
-
+            
         }
+        Write-Host -fore Yellow ""
     }else{
         Write-Host -fore DarkRed [x] Error!
         if (!$lang){
@@ -73,7 +75,9 @@ function MakeEnvi {
         if (!$name){
             Write-Host -fore DarkRed [x] Langquage not set!
         }
-        Write-Host -fore DarkRed "[x] Exit !"        
+        Write-Host -fore DarkRed "[x] Exit !"
+        Write-Host ""
+        return       
     }
 }   
 
