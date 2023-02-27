@@ -35,12 +35,14 @@
 <br>
 
 > Here we install the script.
+>
+> **Make sure you have Visual Code and Python 3.8+ installed!**
 
 <details>
 <summary>Installation</summary>
 <br>
 
-> Copy the content from the [script](#automatic-project-creation)
+> Copy the content from the [script](https://raw.githubusercontent.com/sera619/MakeEnvi-Powershell/master/MakeEnvi.ps1)
 >
 > Open a PowerShell-Terminal and type "explorer $profile"
 >
