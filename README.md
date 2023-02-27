@@ -50,7 +50,7 @@
 > 
 > Paste the copied script code somewhere in the script.
 >
-> Save file and close the restart the terminal.
+> Save file and restart the terminal.
 > 
 > Make sure you edite the \<codedirectory\> variable in the script to you root code directory!
 
