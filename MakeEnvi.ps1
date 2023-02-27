@@ -1,3 +1,4 @@
+
 function MakeEnvi {
     param (
         $lang, $name
@@ -16,12 +17,12 @@ function MakeEnvi {
         if($lang -eq "Python"){
             Write-Host -fore Cyan `#`#`#`#`#`#` MakeEnvi `- Python Project `#`#`#`#`#`#`
             
-            $path = "C:\"+$codedir+"\1Coding\"+$lang+"\"+$name
+            $path = "C:\"+$codedir+"\"+$lang+"\"+$name
             $exist = Test-Path $path
             if(!$exist){
                 Write-Host -fore Yellow [!] Erstelle $path ...
                 
-                New-Item -Type Directory $path
+                New-Item -Type Directory $path | Out-Null
             }else{
                 Write-Host -fore DarkRed [x] Error: Pfad $path existiert bereits!
                 return
@@ -37,19 +38,19 @@ function MakeEnvi {
             Write-Host -fore Yellow ""
             Write-Host -fore Cyan `#`#`#`#`#`#` MakeEnvi `- JavaScript Project `#`#`#`#`#`#`
             
-            $path = "C:\1Coding\"+$lang+"\"+$name
+            $path = "C:\"+$codedir+"\"+$lang+"\"+$name
             $exist = Test-Path $path
             if(!$exist){
                 Write-Host -fore Yellow [!] Erstelle $path ...
                 
                 New-Item -Type Directory $path | Out-Null
-                Set-Location $path
             }else{
                 Write-Host -fore DarkRed [x] Error: Pfad $path existiert bereits!
                 Write-Host -fore DarkRed "[x] Exit !"
                 return
             }
         } 
+        Set-Location $path
         Write-Host -fore Yellow ""
         Write-Host -fore Cyan "[?] Soll ein Basic-Filesystem erstellt werden? (y/n):"
         $option = Read-Host

@@ -42,7 +42,7 @@
 
 > Copy the content from the [script](#automatic-project-creation)
 >
-> Open a PowerShell-Terminal and type "explorer $profile" (Notice to write "Dokumente" in your systemlanguage)
+> Open a PowerShell-Terminal and type "explorer $profile"
 >
 > A Editor Window will appear with your profile opened.
 > 
