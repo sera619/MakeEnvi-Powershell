@@ -155,7 +155,6 @@ function WriteConfig{
     param(
         $name
     )
-    $text = "name: " + $name + "`nversion: 0.1`nauthor: S3R43o3"
-
-    $text | Out-File -FilePath .\config.yml
+    $text = "name: " + $name + "`nversion: 0.1"
+    $text | Out-File -FilePath .\config.yml | Out-Null
 }
