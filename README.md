@@ -53,6 +53,20 @@
 > Save file and restart the terminal.
 > 
 > Make sure you edite the \<codedirectory\> variable in the script to you root code directory!
+>
+>```powershell
+>function MakeEnvi {
+>    param (
+>        $lang, $name
+>    )
+>    Write-Host ""
+>    if ($lang -and $name){
+>        # Set this to your Codedirectory
+>        $codedir = "<codedirectory>" # <----- example Codes
+>        #
+>        if ($codedir -eq "<codedirectory>"){
+>    ...
+>```
 
 </details>
 <br>
