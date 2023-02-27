@@ -81,9 +81,9 @@
 >
 > The "codelanguage" and "projectname" represent your inputs
 >
-```Powershell
-    MakeEnvi codelanguage projectname
-```
+>```Powershell
+>    MakeEnvi codelanguage projectname
+>```
 >
 > Your project should be Created
 >
