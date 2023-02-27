@@ -123,3 +123,39 @@ function MakeEnvi {
 }   
 
 Set-Alias shortcut `MakeEnvi`
+
+function CBF {
+    New-Item -Type Directory tests, src, assets, assets/img, assets/audio | Out-Null
+    New-Item main.py, src/settings.py, src/__init__.py, README.md, .gitignore, config.yml | Out-Null
+    WriteReadme -name $name
+    WriteConfig -name $name
+}
+Set-Alias shortcut `CBF`
+
+
+function WriteReadme{
+    param (
+        $path,
+        $name
+    )
+    
+    $text = "# $name #
+
+> Set your Projectdescription text!
+
+## Installation ##
+
+> Set your installation instructions here."
+
+    $text | Out-File -FilePath README.md | Out-Null
+
+}
+
+function WriteConfig{
+    param(
+        $name
+    )
+    $text = "name: " + $name + "`nversion: 0.1`nauthor: S3R43o3"
+
+    $text | Out-File -FilePath .\config.yml
+}
