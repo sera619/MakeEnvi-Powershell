@@ -6,12 +6,11 @@
 
 <details >
 <summary>Features</summary>
-<br>
 
 > - create Base Filesystem with common folders
 > - Python will create a venv for you and activate this automaticly
 > - JavaScript will create a html, css, JavaScript for you
-> - For all langs it would be create:
+> - For all langs it create:
 >   - README.md
 >   - config.yml
 >   - .gitignore
