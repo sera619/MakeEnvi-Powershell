@@ -5,6 +5,22 @@
 > This Powershellscript will create new code projects.
 
 <details >
+<summary>Features</summary>
+<br>
+
+> - create Base Filesystem with common folders
+> - Python will create a venv for you and activate this automaticly
+> - JavaScript will create a html, css, JavaScript for you
+> - For all langs it would be create:
+>   - README.md
+>   - config.yml
+>   - .gitignore
+
+</details>
+
+<br>
+
+<details >
 <summary>Supported languages</summary>
 <br>
 
@@ -14,6 +30,7 @@
 >| JavaScript| ✔️ |
 
 </details>
+
 
 ## Usage ##
 
